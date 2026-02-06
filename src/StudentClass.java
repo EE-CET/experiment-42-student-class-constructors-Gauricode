@@ -2,9 +2,9 @@ import java.util.Scanner;
 
 class Student {
 	String name;
-	int rollNo;
+	String rollNo;
    
-	Student(String name, int rollNo){
+	Student(String name, String rollNo){
 		this.name=name;
 		this.rollNo=rollNo;
 	}
@@ -18,16 +18,16 @@ public class StudentClass {
      public static void main(String[] args){
         Scanner sc=new Scanner(System.in);
 	String name1=sc.nextLine();
-	int rollNo1=sc.nextInt();
-	sc.nextLine();
+	String rollNo1=sc.nextLine();
+	
 	Student s1=new Student(name1,rollNo1);
         
         // TODO: Read name1
         // TODO: Read rollNo1
         // Hint: Handle the newline consumption if using nextLine() after nextInt()
         String name2=sc.nextLine();
-	int rollNo2=sc.nextInt();
-	sc.nextLine();
+	String rollNo2=sc.nextLine();
+	
 	Student s2=new Student(name2,rollNo2);
 
         // TODO: Read name2
